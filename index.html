@@ -17,29 +17,19 @@
         <p class="col-2">Time:<span id="timer"></span></p>
     </header>
 
-    <div class="quiz-title">
+    <div id="questionsDiv">
         <!-- quiz title and instructions -->
         <h1 class="font-weight-bold">Timed Coding Quiz</h1>
         <p>You will have 60 seconds to answer as many questions correctly as you can.</p>
         <p>Incorrect answers will deduct 10 seconds from your time.</p>
         <p>Your final time will be your final score.</p>
+
+        <ul id="unorderedList"></ul>
     
         <!-- start button -->
         <button class="start-btn btn-primary btn-lg w-25" id="start-btn" type="button">Start</button>
     </div>
     
-    
-    <!-- quiz questions will hide until start button is clicked -->
-    <div class="quiz-questions hide collapse">
-        <h2 id="quiz-questions"></h2>
-        <div class="answer-buttons" id="answer-container">
-            <button type="button" id="btn0" class="ans-btn"></button>
-            <button type="button" id="btn1" class="ans-btn"></button>
-            <button type="button" id="btn2" class="ans-btn"></button>
-            <button type="button" id="btn3" class="ans-btn"></button>
-        </div>
-        <p id="results"></p>
-    </div>
     <script src="./assets/script.js"></script>
 </body>
 </html>
