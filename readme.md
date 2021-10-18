@@ -8,3 +8,4 @@ The user has 60 seconds to answer coding inspired questions. The goal is the ans
 Once the quiz is finished, or the timer reaches zero, the user than input their initials and save their high score.
 
 
+![image](https://user-images.githubusercontent.com/89045948/137658019-35574619-ad31-412d-8448-440f3433fed9.png)
