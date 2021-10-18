@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hgih Scores</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="highscores">Highscores</h1>
+        <a href="index.html"><button type="button" id="goBack">Go Back</button></a>
+        <button type="button" id="clear" value="reset">Clear Highscores</button>
+        <ul id="saved-score">
+        </ul>
+    </div>
+    <script>
+        var allScores = localStorage.getItem("allScores");
+            if (allScores === null) {
+                allScores = [];
+            } else {
+                allScores = JSON.parse(allScores);
+            }
+            console.log(allScores);
+
+            for (var i = 0; i < allScores.length; i++) {
+                var li = document.createElement("li");
+                li.innerHTML = allScores[i].initials + " - " + allScores[i].score;
+                document.getElementById("saved-score").appendChild(li);
+            }
+
+            document.getElementById("clear").addEventListener("click", function(e){
+                e.preventDefault();
+                localStorage.clear();
+            })
+
+    </script>
+</body>
+</html>

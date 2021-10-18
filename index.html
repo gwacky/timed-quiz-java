@@ -11,23 +11,40 @@
 <body>
     <header class="header row">
         <!-- veiw high scores -->
-        <a href="./assets/highScores.html" class="col-9" id="view-high-scores">View High Scores</a>
-        <p class="col-3">Time:<span id="timer"></span></p>
+        <a href="highScores.html" class="col-9" id="view-high-scores">View High Scores</a>
+        <p class="col-3">Time: <span id="timer"> 60</span></p>
     </header>
 
-    <div id="questionsDiv">
+    <div class="text-center" id="start-screen">
         <!-- quiz title and instructions -->
         <h1 class="font-weight-bold">Timed Coding Quiz</h1>
         <p>You will have 60 seconds to answer as many questions correctly as you can.</p>
         <p>Incorrect answers will deduct 10 seconds from your time.</p>
         <p>Your final time will be your final score.</p>
-
-        <ul id="unorderedList"></ul>
     
         <!-- start button -->
         <button class="start-btn btn-primary btn-lg w-25" id="start-btn" type="button">Start</button>
     </div>
+    <div class="text-center d-none" id="generator">
+        <h2 id="questionsDiv"></h2>
+        <ul id="unorderedList"></ul>
+    </div>
+    <div class="text-center d-none" id="finish">
+        <h2>Finish!</h2>
+        <p>See how you did.</p>
+        <div id="yourScore"></div>
+    </div>
+
     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
